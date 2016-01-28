@@ -140,7 +140,7 @@ sassLint.outputResults = function (results, options, configPath) {
 
     if (config.options['output-file']) {
       try {
-        fs.outputFileSync(path.resolve(process.cwd(), config.options['output-file'] + countUp() + "-report.html")), formatted);
+        fs.outputFileSync(path.resolve(process.cwd(), config.options['output-file'] + countUp() + "-report.html"), formatted);
         console.log('Output successfully written to ' + path.resolve(process.cwd(), config.options['output-file'] + counter + "-report.html"));
       }
       catch (e) {
