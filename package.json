@@ -1,32 +1,20 @@
 {
   "name": "sass-lint",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "All Node Sass linter!",
   "main": "index.js",
   "scripts": {
-    "preversion": "npm test",
-    "pretest": "eslint .",
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec tests tests/rules",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    
   },
   "bin": {
     "sass-lint": "./bin/sass-lint.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sasstools/sass-lint.git"
+    "url": "https://github.com/monkey-tobi/sass-lint.git"
   },
-  "keywords": [
-    "Sass",
-    "SCSS",
-    "lint"
-  ],
-  "author": "Sam Richard",
+  "author": "Tobias Feld",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sasstools/sass-lint/issues"
-  },
-  "homepage": "https://github.com/sasstools/sass-lint",
   "dependencies": {
     "commander": "^2.8.1",
     "eslint": "^1.1.0",
